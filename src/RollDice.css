@@ -1,0 +1,33 @@
+.roll-dice {
+    flex: 1;
+    margin: auto;
+    transform: rotate(180deg);
+}
+
+.number {
+    font-size: 15vh;
+    transform: scale(2);
+    font-weight: 700;
+    margin: 10vh 0;
+    text-shadow: 2px 2px #2d2d2d;
+    transition: all 0.2s ease-in-out;
+}
+
+.number.greater {
+    color: var(--color-green);
+}
+
+.number.smaller {
+    color: var(--color-red);
+}
+
+.rolling .number {
+    transition: none;
+    text-shadow: none;
+    filter: blur(4px);
+    color: black;
+}
+
+.roll-dice.revert {
+    transform: none;
+}

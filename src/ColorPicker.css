@@ -1,10 +1,13 @@
 .colorpicker {
+    flex: 1;
+    margin: auto;
+  }
+
+  .colorpicker-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex: 1;
-    margin: auto;
     flex-wrap: wrap;
     padding: 20vh 7vh 6vh;
   }

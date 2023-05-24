@@ -9,13 +9,15 @@ export const ColorPicker = (props: {
 }) => {
   return (
     <div className={`colorpicker ${props.revert ? "revert" : ""}`}>
-      {COLORS.map((col) => (
-        <button
-          className={`color bg-${col}`}
-          key={col}
-          onClick={() => props.counter.setColor(col)}
-        />
-      ))}
+      <div className="colorpicker-wrapper">
+        {COLORS.map((col) => (
+          <button
+            className={`color bg-${col}`}
+            key={col}
+            onClick={() => props.counter.setColor(col)}
+          />
+        ))}
+      </div>
     </div>
   );
 };
