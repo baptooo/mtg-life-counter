@@ -18,16 +18,16 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        uses:  uses: borales/actions-yarn@v4
+        uses: borales/actions-yarn@v4
         with:
           cmd: install
 
       - name: Build app
-        uses:  uses: borales/actions-yarn@v4
+        uses: borales/actions-yarn@v4
         with:
           cmd: build
 
       - name: Deploy to surge
-        uses:  uses: borales/actions-yarn@v4
+        uses: borales/actions-yarn@v4
         with:
           cmd: surge --token ${{ secrets.SURGE_TOKEN }} --project ./dist --domain mtg-life-counter.surge.sh
