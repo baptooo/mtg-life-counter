@@ -37,7 +37,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 46.2vh;
   }
   
   .counter {
@@ -70,17 +69,15 @@ body {
   }
   
   .controls {
-    position: relative;
-    z-index: 1;
-    height: 0;
+    flex: 0;
     background: #333;
     box-shadow: 0 0 20px inset black;
-    transition: height 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     overflow: hidden;
   }
   
   .controls.opened {
-    height: 20vh;
+    flex: 0.5;
   }
   
   .logo {

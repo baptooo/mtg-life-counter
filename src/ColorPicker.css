@@ -1,19 +1,7 @@
 .colorpicker {
     flex: 1;
     margin: auto;
-  }
-
-  .colorpicker-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20vh 7vh 6vh;
-  }
-  
-  .colorpicker.revert {
-    transform: rotate(180deg);
+    position: relative;
   }
   
   .color {
@@ -21,10 +9,7 @@
     height: 8vh;
     border-radius: 50%;
     border: none;
-    margin: 1vh;
-  }
-  
-  .color:nth-child(2) {
-    transform: translateY(-8vh);
+    position: absolute;
+    left: 50%; top: 50%;
   }
   
